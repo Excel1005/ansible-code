@@ -1,0 +1,15 @@
+[devservers]
+18.204.221.221
+
+[qaservers]
+44.204.182.235
+
+#[children:devqa]
+#qaserver
+#devserver
+
+[devservers:vars]
+ansible_ssh_private_key_file=keypair.pem
+
+[qaservers:vars]
+ansible_ssh_private_key_file=keypair.pem
